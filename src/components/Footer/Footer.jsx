@@ -8,11 +8,11 @@ function Footer() {
    <div className="container">
        <div className="row py-4 d-flex- align-items-center ">
        <div className="col md-12 text-center bg-dark mr-4">
-           <a href="/" ><img src="/img/fb.png" width={40} alt=""/></a>
-           <a href="/" ><img src="/img/whatsapp.png" width={40} alt=""/></a>
-           <a href="/" ><img src="/img/twitter.png" width={40} alt=""/></a>
-           <a href="/" ><img src="/img/ig.png" width={40} alt=""/></a>
-           <a href="/" ><img src="/img/email.png" width={40} alt=""/></a>
+           <a href="/" ><img src="../../assets/icons/facebook.png" width={40} alt=""/></a>
+           <a href="/" ><img src="/" width={40} alt=""/></a>
+           <a href="/" ><img src="/" width={40} alt=""/></a>
+           <a href="/" ><img src="/" width={40} alt=""/></a>
+           <a href="/" ><img src="/" width={40} alt=""/></a>
        </div>
        </div>
    </div>
