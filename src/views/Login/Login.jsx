@@ -122,7 +122,7 @@ function Login() {
                                <div className="row align-items-center">
               
                                    <div className="col-2 d-none d-md-block">
-                                       <img src="/img/facebook.png" width="32" alt=""/>
+                                       <img src="../../assets/icons/facebook.png" width="32" alt=""/>
                                    </div>
 
 
@@ -140,7 +140,7 @@ function Login() {
 
                            <div className="row align-items-center">
                                <div className="col-2 d-none d-md-block">
-                                   <img src="/img/google.png" width="32" alt=""/>
+                                   <img src="../../assets/icons/google.png" width="32" alt=""/>
                                </div>
                                <div className="col-12 col-md-10 text-center">Google</div>
                            </div>
