@@ -1,0 +1,389 @@
+[debug] [2023-05-02T19:37:38.205Z] ----------------------------------------------------------------------
+[debug] [2023-05-02T19:37:38.206Z] Command:       /snap/node/7392/bin/node /usr/local/bin/firebase serve
+[debug] [2023-05-02T19:37:38.206Z] CLI Version:   11.29.1
+[debug] [2023-05-02T19:37:38.206Z] Platform:      linux
+[debug] [2023-05-02T19:37:38.206Z] Node Version:  v18.16.0
+[debug] [2023-05-02T19:37:38.207Z] Time:          Tue May 02 2023 14:37:38 GMT-0500 (hora estándar de Colombia)
+[debug] [2023-05-02T19:37:38.207Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2023-05-02T19:37:38.272Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2023-05-02T19:37:38.272Z] > authorizing via signed-in user (sniperwolf2313@gmail.com)
+[debug] [2023-05-02T19:37:38.272Z] [iam] checking project snaptrash-9ee8c for permissions ["firebase.projects.get"]
+[debug] [2023-05-02T19:37:38.273Z] >>> [apiv2][query] POST https://cloudresourcemanager.googleapis.com/v1/projects/snaptrash-9ee8c:testIamPermissions [none]
+[debug] [2023-05-02T19:37:38.273Z] >>> [apiv2][(partial)header] POST https://cloudresourcemanager.googleapis.com/v1/projects/snaptrash-9ee8c:testIamPermissions x-goog-quota-user=projects/snaptrash-9ee8c
+[debug] [2023-05-02T19:37:38.273Z] >>> [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/snaptrash-9ee8c:testIamPermissions {"permissions":["firebase.projects.get"]}
+[debug] [2023-05-02T19:37:38.784Z] <<< [apiv2][status] POST https://cloudresourcemanager.googleapis.com/v1/projects/snaptrash-9ee8c:testIamPermissions 200
+[debug] [2023-05-02T19:37:38.784Z] <<< [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/snaptrash-9ee8c:testIamPermissions {"permissions":["firebase.projects.get"]}
+[debug] [2023-05-02T19:37:38.785Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/snaptrash-9ee8c [none]
+[debug] [2023-05-02T19:37:39.152Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/snaptrash-9ee8c 200
+[debug] [2023-05-02T19:37:39.153Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/snaptrash-9ee8c {"projectId":"snaptrash-9ee8c","projectNumber":"703383371859","displayName":"Snaptrash","name":"projects/snaptrash-9ee8c","resources":{"hostingSite":"snaptrash-9ee8c"},"state":"ACTIVE","etag":"1_d85f0bdb-8205-45bf-9e67-dc26bb30df37"}
+[info] 
+[info] === Serving from '/home/michael/Escritorio/personalProyects/snaptrash-proyect'...
+[info] 
+[debug] [2023-05-02T19:37:39.156Z] defaultcredentials: writing to file /home/michael/.config/firebase/sniperwolf2313_gmail_com_application_default_credentials.json
+[debug] [2023-05-02T19:37:39.158Z] Setting GAC to /home/michael/.config/firebase/sniperwolf2313_gmail_com_application_default_credentials.json {"metadata":{"emulator":{"name":"functions"},"message":"Setting GAC to /home/michael/.config/firebase/sniperwolf2313_gmail_com_application_default_credentials.json"}}
+[debug] [2023-05-02T19:37:39.158Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/snaptrash-9ee8c/adminSdkConfig [none]
+[debug] [2023-05-02T19:37:39.507Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/snaptrash-9ee8c/adminSdkConfig 200
+[debug] [2023-05-02T19:37:39.508Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/snaptrash-9ee8c/adminSdkConfig {"projectId":"snaptrash-9ee8c","storageBucket":"snaptrash-9ee8c.appspot.com"}
+[info] i  functions: Watching "/home/michael/Escritorio/personalProyects/snaptrash-proyect/functions" for Cloud Functions... {"metadata":{"emulator":{"name":"functions"},"message":"Watching \"/home/michael/Escritorio/personalProyects/snaptrash-proyect/functions\" for Cloud Functions..."}}
+[debug] [2023-05-02T19:37:39.526Z] Validating nodejs source
+[debug] [2023-05-02T19:37:40.245Z] checkFunctionsSDKVersion encountered error:Unexpected end of JSON input {}
+[debug] [2023-05-02T19:37:40.247Z] > [functions] package.json contents: {
+  "name": "functions",
+  "description": "Cloud Functions for Firebase",
+  "scripts": {
+    "lint": "eslint .",
+    "serve": "firebase emulators:start --only functions",
+    "shell": "firebase functions:shell",
+    "start": "npm run shell",
+    "deploy": "firebase deploy --only functions",
+    "logs": "firebase functions:log"
+  },
+  "engines": {
+    "node": "16"
+  },
+  "main": "index.js",
+  "dependencies": {
+    "firebase-admin": "^11.5.0",
+    "firebase-functions": "^4.2.0"
+  },
+  "devDependencies": {
+    "eslint": "^8.15.0",
+    "eslint-config-google": "^0.14.0",
+    "firebase-functions-test": "^3.0.0"
+  },
+  "private": true
+}
+[debug] [2023-05-02T19:37:40.247Z] Building nodejs source
+[debug] [2023-05-02T19:37:40.247Z] Failed to find version of module node: reached end of search path /home/michael/Escritorio/personalProyects/snaptrash-proyect/functions/node_modules
+[warn] ⚠  functions: Your requested "node" version "16" doesn't match your global version "18". Using node@18 from host. 
+[debug] [2023-05-02T19:37:40.249Z] Could not find functions.yaml. Must use http discovery
+[debug] [2023-05-02T19:37:40.251Z] Found firebase-functions binary at '/home/michael/Escritorio/personalProyects/snaptrash-proyect/functions/node_modules/.bin/firebase-functions'
+[debug] [2023-05-02T19:37:40.485Z] Got response from /__/functions.yaml {"endpoints":{"app":{"platform":"gcfv1","availableMemoryMb":null,"timeoutSeconds":null,"minInstances":null,"maxInstances":null,"ingressSettings":null,"serviceAccountEmail":null,"vpc":null,"httpsTrigger":{},"entryPoint":"app"}},"specVersion":"v1alpha1","requiredAPIs":[]}
+[info] ✔  functions: Loaded functions definitions from source: app. {"metadata":{"emulator":{"name":"functions"},"message":"Loaded functions definitions from source: app."}}
+[info] ✔  functions[us-central1-app]: http function initialized (http://localhost:5000/snaptrash-9ee8c/us-central1/app). {"metadata":{"emulator":{"name":"functions"},"message":"\u001b[1mhttp\u001b[22m function initialized (http://localhost:5000/snaptrash-9ee8c/us-central1/app)."}}
+[debug] [2023-05-02T19:37:42.869Z] [work-queue] {"queuedWork":["/snaptrash-9ee8c/us-central1/app-2023-05-02T19:37:42.869Z"],"queueLength":1,"runningWork":[],"workRunningCount":0}
+[debug] [2023-05-02T19:37:42.870Z] [work-queue] {"queuedWork":[],"queueLength":0,"runningWork":["/snaptrash-9ee8c/us-central1/app-2023-05-02T19:37:42.869Z"],"workRunningCount":1}
+[debug] [2023-05-02T19:37:42.870Z] Accepted request GET /snaptrash-9ee8c/us-central1/app --> us-central1-app
+[debug] [2023-05-02T19:37:42.875Z] [functions] Runtime ready! Sending request! {"metadata":{"emulator":{"name":"functions"},"message":"[functions] Runtime ready! Sending request!"}}
+[debug] [2023-05-02T19:37:42.875Z] [functions] Got req.url=/snaptrash-9ee8c/us-central1/app, mapping to path=/ {"metadata":{"emulator":{"name":"functions"},"message":"[functions] Got req.url=/snaptrash-9ee8c/us-central1/app, mapping to path=/"}}
+[debug] [2023-05-02T19:37:42.886Z] [worker-pool] addWorker(us-central1-app) {"metadata":{"emulator":{"name":"functions"},"message":"[worker-pool] addWorker(us-central1-app)"}}
+[debug] [2023-05-02T19:37:42.887Z] [worker-pool] Adding worker with key us-central1-app, total=1 {"metadata":{"emulator":{"name":"functions"},"message":"[worker-pool] Adding worker with key us-central1-app, total=1"}}
+[debug] [2023-05-02T19:37:43.372Z] [runtime-status] [51675] Resolved module firebase-admin {"declared":true,"installed":true,"version":"11.7.0","resolution":"/home/michael/Escritorio/personalProyects/snaptrash-proyect/functions/node_modules/firebase-admin/lib/index.js"} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-app"},"extension":{},"message":"[runtime-status] [51675] Resolved module firebase-admin {\"declared\":true,\"installed\":true,\"version\":\"11.7.0\",\"resolution\":\"/home/michael/Escritorio/personalProyects/snaptrash-proyect/functions/node_modules/firebase-admin/lib/index.js\"}"}}
+[debug] [2023-05-02T19:37:43.372Z] [runtime-status] [51675] Resolved module firebase-functions {"declared":true,"installed":true,"version":"4.3.1","resolution":"/home/michael/Escritorio/personalProyects/snaptrash-proyect/functions/node_modules/firebase-functions/lib/v1/index.js"} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-app"},"extension":{},"message":"[runtime-status] [51675] Resolved module firebase-functions {\"declared\":true,\"installed\":true,\"version\":\"4.3.1\",\"resolution\":\"/home/michael/Escritorio/personalProyects/snaptrash-proyect/functions/node_modules/firebase-functions/lib/v1/index.js\"}"}}
+[debug] [2023-05-02T19:37:43.372Z] [runtime-status] [51675] Outgoing network have been stubbed. [{"name":"http","status":"mocked"},{"name":"http","status":"mocked"},{"name":"https","status":"mocked"},{"name":"https","status":"mocked"},{"name":"net","status":"mocked"}] {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-app"},"extension":{},"message":"[runtime-status] [51675] Outgoing network have been stubbed. [{\"name\":\"http\",\"status\":\"mocked\"},{\"name\":\"http\",\"status\":\"mocked\"},{\"name\":\"https\",\"status\":\"mocked\"},{\"name\":\"https\",\"status\":\"mocked\"},{\"name\":\"net\",\"status\":\"mocked\"}]"}}
+[debug] [2023-05-02T19:37:43.373Z] [runtime-status] [51675] Resolved module firebase-functions {"declared":true,"installed":true,"version":"4.3.1","resolution":"/home/michael/Escritorio/personalProyects/snaptrash-proyect/functions/node_modules/firebase-functions/lib/v1/index.js"} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-app"},"extension":{},"message":"[runtime-status] [51675] Resolved module firebase-functions {\"declared\":true,\"installed\":true,\"version\":\"4.3.1\",\"resolution\":\"/home/michael/Escritorio/personalProyects/snaptrash-proyect/functions/node_modules/firebase-functions/lib/v1/index.js\"}"}}
+[debug] [2023-05-02T19:37:43.470Z] [runtime-status] [51675] Checked functions.config() {"config":{}} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-app"},"extension":{},"message":"[runtime-status] [51675] Checked functions.config() {\"config\":{}}"}}
+[debug] [2023-05-02T19:37:43.471Z] [runtime-status] [51675] firebase-functions has been stubbed. {"functionsResolution":{"declared":true,"installed":true,"version":"4.3.1","resolution":"/home/michael/Escritorio/personalProyects/snaptrash-proyect/functions/node_modules/firebase-functions/lib/v1/index.js"}} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-app"},"extension":{},"message":"[runtime-status] [51675] firebase-functions has been stubbed. {\"functionsResolution\":{\"declared\":true,\"installed\":true,\"version\":\"4.3.1\",\"resolution\":\"/home/michael/Escritorio/personalProyects/snaptrash-proyect/functions/node_modules/firebase-functions/lib/v1/index.js\"}}"}}
+[debug] [2023-05-02T19:37:43.471Z] [runtime-status] [51675] Resolved module firebase-functions {"declared":true,"installed":true,"version":"4.3.1","resolution":"/home/michael/Escritorio/personalProyects/snaptrash-proyect/functions/node_modules/firebase-functions/lib/v1/index.js"} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-app"},"extension":{},"message":"[runtime-status] [51675] Resolved module firebase-functions {\"declared\":true,\"installed\":true,\"version\":\"4.3.1\",\"resolution\":\"/home/michael/Escritorio/personalProyects/snaptrash-proyect/functions/node_modules/firebase-functions/lib/v1/index.js\"}"}}
+[debug] [2023-05-02T19:37:43.471Z] [runtime-status] [51675] Resolved module firebase-admin {"declared":true,"installed":true,"version":"11.7.0","resolution":"/home/michael/Escritorio/personalProyects/snaptrash-proyect/functions/node_modules/firebase-admin/lib/index.js"} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-app"},"extension":{},"message":"[runtime-status] [51675] Resolved module firebase-admin {\"declared\":true,\"installed\":true,\"version\":\"11.7.0\",\"resolution\":\"/home/michael/Escritorio/personalProyects/snaptrash-proyect/functions/node_modules/firebase-admin/lib/index.js\"}"}}
+[debug] [2023-05-02T19:37:43.472Z] [runtime-status] [51675] Resolved module firebase-functions {"declared":true,"installed":true,"version":"4.3.1","resolution":"/home/michael/Escritorio/personalProyects/snaptrash-proyect/functions/node_modules/firebase-functions/lib/v1/index.js"} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-app"},"extension":{},"message":"[runtime-status] [51675] Resolved module firebase-functions {\"declared\":true,\"installed\":true,\"version\":\"4.3.1\",\"resolution\":\"/home/michael/Escritorio/personalProyects/snaptrash-proyect/functions/node_modules/firebase-functions/lib/v1/index.js\"}"}}
+[debug] [2023-05-02T19:37:43.472Z] [runtime-status] [51675] firebase-admin has been stubbed. {"adminResolution":{"declared":true,"installed":true,"version":"11.7.0","resolution":"/home/michael/Escritorio/personalProyects/snaptrash-proyect/functions/node_modules/firebase-admin/lib/index.js"}} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-app"},"extension":{},"message":"[runtime-status] [51675] firebase-admin has been stubbed. {\"adminResolution\":{\"declared\":true,\"installed\":true,\"version\":\"11.7.0\",\"resolution\":\"/home/michael/Escritorio/personalProyects/snaptrash-proyect/functions/node_modules/firebase-admin/lib/index.js\"}}"}}
+[debug] [2023-05-02T19:37:43.522Z] [runtime-status] [51675] initializeApp(DEFAULT) {"credential":{"implicit":false,"projectId":"snaptrash-9ee8c","privateKey":"-----BEGIN PRIVATE KEY-----\nMIIEvQIBADANBgkqhkiG9w0BAQEFAASCBKcwggSjAgEAAoIBAQCbgmWtfVaVEoZD\naN6/HvCbV4onNP3Jmxp3lCM/tdCeLbN2euK8JJAVqjL1c8OYMAwtF+ffMlGHQJ/b\nY9G7+++ThmhKcPN6FcEOwa1ydK1ou7E66OPwwlhRO2YVDojdJfhYrZxupxCWDmSw\nMR0/3eV0XFsA+akTLXEl4Tc75Q99lKbXdVdMxsVexarsQtiQbAjY41G+AdX1Sy23\n3xxSEptvNP+xq4EtouXfjw6ijj2FE/DQKuqgYOO4IaQa+at0bCGmHAp9YGAsIp0v\nzWZfdNxK1sC05WGpKDH8zE9qOgE3K9VPDdSkHlIsBG81XiOBcLnIUmB+HyBz1Gzs\nozlq0bPxAgMBAAECggEACyeeXYR5GnZatSknmTQB9FKiMU/GyJhcnKk+ogpLrZz/\nm4cTDoXc5ADyaNLl+9uuc+mcE1GLsZT8IoOVftOCiuWAQ564iFBZKdLQuz4NVk7o\nVp5wA0wdg64sE2SYgqx/lPTXHMTVFr5vkIflXjhvhho92OMPsrV2wU3XZW933f0Y\nFwAdzK5CAwdotTvQDAVi6AvLj3Rtcg7L2UjnQ0Td4QyP5dY0I5fj7PddFmBStiA6\nrfjdm0EgeZ/qRG6nLOI5gsfWXLvpqoPDvio/f8Xw3EykoWovUDhP60mVfwyxV4yu\nz3K6MDyyhWfei/GB5nJONJJnHwMEETk5v3UI/xjHMQKBgQDQ72po1ZN2EDzE7Z93\nPqrfKSQ29cSPeus6p8oRbFHEOZHe8p2AvC7WTWcPqkFoavCs0GJaddU1hW4qw+KN\nrjsza3NkokmKrjW+8pliDZvua82CUpL7sK9/dK3Q5OKoemXmxV9z2lP7BwGY0ye3\nWUfwAkWaFGwlMVkwtnCv/qegHQKBgQC+ihgRAIleKGRtSLmjOISAk1YiSJgPSYOf\noYyLdbqt08E+yNnxULkxO5vuUgWnK7r99Qacr0VIbrDdr0J8LCqXlqvaYA6W1/kN\nZvjJV5iG73RdCjinu2RExOttAX3haPaYpxzj3fINZ6UC8HM0V2qXMLJyzLGPsfAZ\ntBzWonhC5QKBgQCkBnDpYFJl65VpnIsGWGJY07mklAj+AyfMYpFWYE1I2VFVT+6q\ndBHpF9cDC0xSJzJO2UF9dugtHlVAqYugYtoDIiXzKRzHDMEQ6O/VdI2n/WXXG/Bc\nO3drfjQ+vJHcZkq9gtHO5+XqOrPcQFj7rdG18HKn5cSI5lb40SFiaW87WQKBgHLj\n18EgvrPMzUlsKat2n8bbkHtZpH7LSBeQFKve0DKSVZqjB29PymsaU1qvkIMNhlIt\nVdBSiwcy32i8je1LwF7pVjR16TYhgiYHqgnVzL3IUzTqveC9yKcCyiZPWPT7En5X\nfb8UjChzD3enPwAXmckSbvdz37kShQEqrpzpGHTVAoGAAZYYJKXHC9hEw/oAy/J2\nIT/c9aYs7kfVS9x1LPPtDZr3P6HYLIO9RPrpFb8zent1wl2XYERLHxXBRHda5egG\n8GkBW9ZDBnRcIJHTyfs4cxhanp0d2NwvQpxnTzXUfqh3LZ8sSAXRqV48g81Lj++7\nsJPuikgg76YlTny3fg/UwEM=\n-----END PRIVATE KEY-----\n","clientEmail":"firebase-adminsdk-13dqt@snaptrash-9ee8c.iam.gserviceaccount.com","httpClient":{"retry":{"maxRetries":4,"statusCodes":[503],"ioErrorCodes":["ECONNRESET","ETIMEDOUT"],"backOffFactor":0.5,"maxDelayInMillis":60000}}}} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-app"},"extension":{},"message":"[runtime-status] [51675] initializeApp(DEFAULT) {\"credential\":{\"implicit\":false,\"projectId\":\"snaptrash-9ee8c\",\"privateKey\":\"-----BEGIN PRIVATE KEY-----\\nMIIEvQIBADANBgkqhkiG9w0BAQEFAASCBKcwggSjAgEAAoIBAQCbgmWtfVaVEoZD\\naN6/HvCbV4onNP3Jmxp3lCM/tdCeLbN2euK8JJAVqjL1c8OYMAwtF+ffMlGHQJ/b\\nY9G7+++ThmhKcPN6FcEOwa1ydK1ou7E66OPwwlhRO2YVDojdJfhYrZxupxCWDmSw\\nMR0/3eV0XFsA+akTLXEl4Tc75Q99lKbXdVdMxsVexarsQtiQbAjY41G+AdX1Sy23\\n3xxSEptvNP+xq4EtouXfjw6ijj2FE/DQKuqgYOO4IaQa+at0bCGmHAp9YGAsIp0v\\nzWZfdNxK1sC05WGpKDH8zE9qOgE3K9VPDdSkHlIsBG81XiOBcLnIUmB+HyBz1Gzs\\nozlq0bPxAgMBAAECggEACyeeXYR5GnZatSknmTQB9FKiMU/GyJhcnKk+ogpLrZz/\\nm4cTDoXc5ADyaNLl+9uuc+mcE1GLsZT8IoOVftOCiuWAQ564iFBZKdLQuz4NVk7o\\nVp5wA0wdg64sE2SYgqx/lPTXHMTVFr5vkIflXjhvhho92OMPsrV2wU3XZW933f0Y\\nFwAdzK5CAwdotTvQDAVi6AvLj3Rtcg7L2UjnQ0Td4QyP5dY0I5fj7PddFmBStiA6\\nrfjdm0EgeZ/qRG6nLOI5gsfWXLvpqoPDvio/f8Xw3EykoWovUDhP60mVfwyxV4yu\\nz3K6MDyyhWfei/GB5nJONJJnHwMEETk5v3UI/xjHMQKBgQDQ72po1ZN2EDzE7Z93\\nPqrfKSQ29cSPeus6p8oRbFHEOZHe8p2AvC7WTWcPqkFoavCs0GJaddU1hW4qw+KN\\nrjsza3NkokmKrjW+8pliDZvua82CUpL7sK9/dK3Q5OKoemXmxV9z2lP7BwGY0ye3\\nWUfwAkWaFGwlMVkwtnCv/qegHQKBgQC+ihgRAIleKGRtSLmjOISAk1YiSJgPSYOf\\noYyLdbqt08E+yNnxULkxO5vuUgWnK7r99Qacr0VIbrDdr0J8LCqXlqvaYA6W1/kN\\nZvjJV5iG73RdCjinu2RExOttAX3haPaYpxzj3fINZ6UC8HM0V2qXMLJyzLGPsfAZ\\ntBzWonhC5QKBgQCkBnDpYFJl65VpnIsGWGJY07mklAj+AyfMYpFWYE1I2VFVT+6q\\ndBHpF9cDC0xSJzJO2UF9dugtHlVAqYugYtoDIiXzKRzHDMEQ6O/VdI2n/WXXG/Bc\\nO3drfjQ+vJHcZkq9gtHO5+XqOrPcQFj7rdG18HKn5cSI5lb40SFiaW87WQKBgHLj\\n18EgvrPMzUlsKat2n8bbkHtZpH7LSBeQFKve0DKSVZqjB29PymsaU1qvkIMNhlIt\\nVdBSiwcy32i8je1LwF7pVjR16TYhgiYHqgnVzL3IUzTqveC9yKcCyiZPWPT7En5X\\nfb8UjChzD3enPwAXmckSbvdz37kShQEqrpzpGHTVAoGAAZYYJKXHC9hEw/oAy/J2\\nIT/c9aYs7kfVS9x1LPPtDZr3P6HYLIO9RPrpFb8zent1wl2XYERLHxXBRHda5egG\\n8GkBW9ZDBnRcIJHTyfs4cxhanp0d2NwvQpxnTzXUfqh3LZ8sSAXRqV48g81Lj++7\\nsJPuikgg76YlTny3fg/UwEM=\\n-----END PRIVATE KEY-----\\n\",\"clientEmail\":\"firebase-adminsdk-13dqt@snaptrash-9ee8c.iam.gserviceaccount.com\",\"httpClient\":{\"retry\":{\"maxRetries\":4,\"statusCodes\":[503],\"ioErrorCodes\":[\"ECONNRESET\",\"ETIMEDOUT\"],\"backOffFactor\":0.5,\"maxDelayInMillis\":60000}}}}"}}
+[warn] ⚠  functions: The Cloud Firestore emulator is not running, so calls to Firestore will affect production. {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-app"},"extension":{},"message":"The Cloud Firestore emulator is not running, so calls to Firestore will affect production."}}
+[debug] [2023-05-02T19:37:43.527Z] [runtime-status] [51675] Functions runtime initialized. {"cwd":"/home/michael/Escritorio/personalProyects/snaptrash-proyect/functions","node_version":"18.16.0"} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-app"},"extension":{},"message":"[runtime-status] [51675] Functions runtime initialized. {\"cwd\":\"/home/michael/Escritorio/personalProyects/snaptrash-proyect/functions\",\"node_version\":\"18.16.0\"}"}}
+[debug] [2023-05-02T19:37:43.527Z] [runtime-status] [51675] Listening to port: /tmp/fire_emu_e8a7a3a7c042869a.sock {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-app"},"extension":{},"message":"[runtime-status] [51675] Listening to port: /tmp/fire_emu_e8a7a3a7c042869a.sock"}}
+[debug] [2023-05-02T19:37:43.595Z] [worker-us-central1-app-552c8755-0c93-4a92-a71e-7f6cfa56c540]: IDLE {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-app"},"extension":{},"message":"[worker-us-central1-app-552c8755-0c93-4a92-a71e-7f6cfa56c540]: IDLE"}}
+[debug] [2023-05-02T19:37:43.595Z] [worker-pool] submitRequest(triggerId=us-central1-app) {"metadata":{"emulator":{"name":"functions"},"message":"[worker-pool] submitRequest(triggerId=us-central1-app)"}}
+[info] i  functions: Beginning execution of "us-central1-app" {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-app"},"extension":{},"message":"Beginning execution of \"us-central1-app\""}}
+[debug] [2023-05-02T19:37:43.595Z] [worker-us-central1-app-552c8755-0c93-4a92-a71e-7f6cfa56c540]: BUSY {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-app"},"extension":{},"message":"[worker-us-central1-app-552c8755-0c93-4a92-a71e-7f6cfa56c540]: BUSY"}}
+[info] i  functions: Finished "us-central1-app" in 4.189127ms {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-app"},"extension":{},"message":"Finished \"us-central1-app\" in 4.189127ms"}}
+[debug] [2023-05-02T19:37:43.600Z] [worker-us-central1-app-552c8755-0c93-4a92-a71e-7f6cfa56c540]: IDLE {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-app"},"extension":{},"message":"[worker-us-central1-app-552c8755-0c93-4a92-a71e-7f6cfa56c540]: IDLE"}}
+[debug] [2023-05-02T19:37:43.600Z] [work-queue] {"queuedWork":[],"queueLength":0,"runningWork":[],"workRunningCount":0}
+[debug] [2023-05-02T19:37:50.090Z] [work-queue] {"queuedWork":["/snaptrash-9ee8c/us-central1/app/api/reports-2023-05-02T19:37:50.090Z"],"queueLength":1,"runningWork":[],"workRunningCount":0}
+[debug] [2023-05-02T19:37:50.091Z] [work-queue] {"queuedWork":[],"queueLength":0,"runningWork":["/snaptrash-9ee8c/us-central1/app/api/reports-2023-05-02T19:37:50.090Z"],"workRunningCount":1}
+[debug] [2023-05-02T19:37:50.091Z] Accepted request GET /snaptrash-9ee8c/us-central1/app/api/reports --> us-central1-app
+[debug] [2023-05-02T19:37:50.094Z] [functions] Runtime ready! Sending request! {"metadata":{"emulator":{"name":"functions"},"message":"[functions] Runtime ready! Sending request!"}}
+[debug] [2023-05-02T19:37:50.095Z] [functions] Got req.url=/snaptrash-9ee8c/us-central1/app/api/reports, mapping to path=/api/reports {"metadata":{"emulator":{"name":"functions"},"message":"[functions] Got req.url=/snaptrash-9ee8c/us-central1/app/api/reports, mapping to path=/api/reports"}}
+[debug] [2023-05-02T19:37:50.095Z] [worker-pool] submitRequest(triggerId=us-central1-app) {"metadata":{"emulator":{"name":"functions"},"message":"[worker-pool] submitRequest(triggerId=us-central1-app)"}}
+[info] i  functions: Beginning execution of "us-central1-app" {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-app"},"extension":{},"message":"Beginning execution of \"us-central1-app\""}}
+[debug] [2023-05-02T19:37:50.095Z] [worker-us-central1-app-552c8755-0c93-4a92-a71e-7f6cfa56c540]: BUSY {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-app"},"extension":{},"message":"[worker-us-central1-app-552c8755-0c93-4a92-a71e-7f6cfa56c540]: BUSY"}}
+[info] i  functions: Finished "us-central1-app" in 2.050857ms {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-app"},"extension":{},"message":"Finished \"us-central1-app\" in 2.050857ms"}}
+[debug] [2023-05-02T19:37:50.097Z] [worker-us-central1-app-552c8755-0c93-4a92-a71e-7f6cfa56c540]: IDLE {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-app"},"extension":{},"message":"[worker-us-central1-app-552c8755-0c93-4a92-a71e-7f6cfa56c540]: IDLE"}}
+[debug] [2023-05-02T19:37:50.097Z] [work-queue] {"queuedWork":[],"queueLength":0,"runningWork":[],"workRunningCount":0}
+[debug] [2023-05-02T19:37:54.589Z] [work-queue] {"queuedWork":["/snaptrash-9ee8c/us-central1/app/api/report-2023-05-02T19:37:54.589Z"],"queueLength":1,"runningWork":[],"workRunningCount":0}
+[debug] [2023-05-02T19:37:54.590Z] [work-queue] {"queuedWork":[],"queueLength":0,"runningWork":["/snaptrash-9ee8c/us-central1/app/api/report-2023-05-02T19:37:54.589Z"],"workRunningCount":1}
+[debug] [2023-05-02T19:37:54.590Z] Accepted request GET /snaptrash-9ee8c/us-central1/app/api/report --> us-central1-app
+[debug] [2023-05-02T19:37:54.594Z] [functions] Runtime ready! Sending request! {"metadata":{"emulator":{"name":"functions"},"message":"[functions] Runtime ready! Sending request!"}}
+[debug] [2023-05-02T19:37:54.594Z] [functions] Got req.url=/snaptrash-9ee8c/us-central1/app/api/report, mapping to path=/api/report {"metadata":{"emulator":{"name":"functions"},"message":"[functions] Got req.url=/snaptrash-9ee8c/us-central1/app/api/report, mapping to path=/api/report"}}
+[debug] [2023-05-02T19:37:54.594Z] [worker-pool] submitRequest(triggerId=us-central1-app) {"metadata":{"emulator":{"name":"functions"},"message":"[worker-pool] submitRequest(triggerId=us-central1-app)"}}
+[info] i  functions: Beginning execution of "us-central1-app" {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-app"},"extension":{},"message":"Beginning execution of \"us-central1-app\""}}
+[debug] [2023-05-02T19:37:54.594Z] [worker-us-central1-app-552c8755-0c93-4a92-a71e-7f6cfa56c540]: BUSY {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-app"},"extension":{},"message":"[worker-us-central1-app-552c8755-0c93-4a92-a71e-7f6cfa56c540]: BUSY"}}
+[info] i  functions: Finished "us-central1-app" in 1.835596ms {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-app"},"extension":{},"message":"Finished \"us-central1-app\" in 1.835596ms"}}
+[debug] [2023-05-02T19:37:54.596Z] [worker-us-central1-app-552c8755-0c93-4a92-a71e-7f6cfa56c540]: IDLE {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-app"},"extension":{},"message":"[worker-us-central1-app-552c8755-0c93-4a92-a71e-7f6cfa56c540]: IDLE"}}
+[debug] [2023-05-02T19:37:54.596Z] [work-queue] {"queuedWork":[],"queueLength":0,"runningWork":[],"workRunningCount":0}
+[debug] [2023-05-02T19:38:20.945Z] [work-queue] {"queuedWork":["/snaptrash-9ee8c/us-central1/app/api/hello-world-2023-05-02T19:38:20.945Z"],"queueLength":1,"runningWork":[],"workRunningCount":0}
+[debug] [2023-05-02T19:38:20.946Z] [work-queue] {"queuedWork":[],"queueLength":0,"runningWork":["/snaptrash-9ee8c/us-central1/app/api/hello-world-2023-05-02T19:38:20.945Z"],"workRunningCount":1}
+[debug] [2023-05-02T19:38:20.946Z] Accepted request GET /snaptrash-9ee8c/us-central1/app/api/hello-world --> us-central1-app
+[debug] [2023-05-02T19:38:20.948Z] [functions] Runtime ready! Sending request! {"metadata":{"emulator":{"name":"functions"},"message":"[functions] Runtime ready! Sending request!"}}
+[debug] [2023-05-02T19:38:20.948Z] [functions] Got req.url=/snaptrash-9ee8c/us-central1/app/api/hello-world, mapping to path=/api/hello-world {"metadata":{"emulator":{"name":"functions"},"message":"[functions] Got req.url=/snaptrash-9ee8c/us-central1/app/api/hello-world, mapping to path=/api/hello-world"}}
+[debug] [2023-05-02T19:38:20.948Z] [worker-pool] submitRequest(triggerId=us-central1-app) {"metadata":{"emulator":{"name":"functions"},"message":"[worker-pool] submitRequest(triggerId=us-central1-app)"}}
+[info] i  functions: Beginning execution of "us-central1-app" {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-app"},"extension":{},"message":"Beginning execution of \"us-central1-app\""}}
+[debug] [2023-05-02T19:38:20.949Z] [worker-us-central1-app-552c8755-0c93-4a92-a71e-7f6cfa56c540]: BUSY {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-app"},"extension":{},"message":"[worker-us-central1-app-552c8755-0c93-4a92-a71e-7f6cfa56c540]: BUSY"}}
+[info] i  functions: Finished "us-central1-app" in 1.861064ms {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-app"},"extension":{},"message":"Finished \"us-central1-app\" in 1.861064ms"}}
+[debug] [2023-05-02T19:38:20.951Z] [worker-us-central1-app-552c8755-0c93-4a92-a71e-7f6cfa56c540]: IDLE {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-app"},"extension":{},"message":"[worker-us-central1-app-552c8755-0c93-4a92-a71e-7f6cfa56c540]: IDLE"}}
+[debug] [2023-05-02T19:38:20.951Z] [work-queue] {"queuedWork":[],"queueLength":0,"runningWork":[],"workRunningCount":0}
+[debug] [2023-05-02T19:39:29.303Z] [work-queue] {"queuedWork":["/snaptrash-9ee8c/us-central1/app/api/reports-2023-05-02T19:39:29.303Z"],"queueLength":1,"runningWork":[],"workRunningCount":0}
+[debug] [2023-05-02T19:39:29.303Z] [work-queue] {"queuedWork":[],"queueLength":0,"runningWork":["/snaptrash-9ee8c/us-central1/app/api/reports-2023-05-02T19:39:29.303Z"],"workRunningCount":1}
+[debug] [2023-05-02T19:39:29.303Z] Accepted request GET /snaptrash-9ee8c/us-central1/app/api/reports --> us-central1-app
+[debug] [2023-05-02T19:39:29.306Z] [functions] Runtime ready! Sending request! {"metadata":{"emulator":{"name":"functions"},"message":"[functions] Runtime ready! Sending request!"}}
+[debug] [2023-05-02T19:39:29.306Z] [functions] Got req.url=/snaptrash-9ee8c/us-central1/app/api/reports, mapping to path=/api/reports {"metadata":{"emulator":{"name":"functions"},"message":"[functions] Got req.url=/snaptrash-9ee8c/us-central1/app/api/reports, mapping to path=/api/reports"}}
+[debug] [2023-05-02T19:39:29.306Z] [worker-pool] submitRequest(triggerId=us-central1-app) {"metadata":{"emulator":{"name":"functions"},"message":"[worker-pool] submitRequest(triggerId=us-central1-app)"}}
+[info] i  functions: Beginning execution of "us-central1-app" {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-app"},"extension":{},"message":"Beginning execution of \"us-central1-app\""}}
+[debug] [2023-05-02T19:39:29.307Z] [worker-us-central1-app-552c8755-0c93-4a92-a71e-7f6cfa56c540]: BUSY {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-app"},"extension":{},"message":"[worker-us-central1-app-552c8755-0c93-4a92-a71e-7f6cfa56c540]: BUSY"}}
+[info] i  functions: Finished "us-central1-app" in 1.521151ms {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-app"},"extension":{},"message":"Finished \"us-central1-app\" in 1.521151ms"}}
+[debug] [2023-05-02T19:39:29.308Z] [worker-us-central1-app-552c8755-0c93-4a92-a71e-7f6cfa56c540]: IDLE {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-app"},"extension":{},"message":"[worker-us-central1-app-552c8755-0c93-4a92-a71e-7f6cfa56c540]: IDLE"}}
+[debug] [2023-05-02T19:39:29.308Z] [work-queue] {"queuedWork":[],"queueLength":0,"runningWork":[],"workRunningCount":0}
+[debug] [2023-05-02T19:41:37.613Z] [work-queue] {"queuedWork":["/snaptrash-9ee8c/us-central1/app/api/reports-2023-05-02T19:41:37.613Z"],"queueLength":1,"runningWork":[],"workRunningCount":0}
+[debug] [2023-05-02T19:41:37.613Z] [work-queue] {"queuedWork":[],"queueLength":0,"runningWork":["/snaptrash-9ee8c/us-central1/app/api/reports-2023-05-02T19:41:37.613Z"],"workRunningCount":1}
+[debug] [2023-05-02T19:41:37.613Z] Accepted request POST /snaptrash-9ee8c/us-central1/app/api/reports --> us-central1-app
+[debug] [2023-05-02T19:41:37.616Z] [functions] Runtime ready! Sending request! {"metadata":{"emulator":{"name":"functions"},"message":"[functions] Runtime ready! Sending request!"}}
+[debug] [2023-05-02T19:41:37.616Z] [functions] Got req.url=/snaptrash-9ee8c/us-central1/app/api/reports, mapping to path=/api/reports {"metadata":{"emulator":{"name":"functions"},"message":"[functions] Got req.url=/snaptrash-9ee8c/us-central1/app/api/reports, mapping to path=/api/reports"}}
+[debug] [2023-05-02T19:41:37.616Z] [worker-pool] submitRequest(triggerId=us-central1-app) {"metadata":{"emulator":{"name":"functions"},"message":"[worker-pool] submitRequest(triggerId=us-central1-app)"}}
+[info] i  functions: Beginning execution of "us-central1-app" {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-app"},"extension":{},"message":"Beginning execution of \"us-central1-app\""}}
+[debug] [2023-05-02T19:41:37.617Z] [worker-us-central1-app-552c8755-0c93-4a92-a71e-7f6cfa56c540]: BUSY {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-app"},"extension":{},"message":"[worker-us-central1-app-552c8755-0c93-4a92-a71e-7f6cfa56c540]: BUSY"}}
+[info] i  functions: Finished "us-central1-app" in 9.123862ms {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-app"},"extension":{},"message":"Finished \"us-central1-app\" in 9.123862ms"}}
+[debug] [2023-05-02T19:41:37.626Z] [worker-us-central1-app-552c8755-0c93-4a92-a71e-7f6cfa56c540]: IDLE {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-app"},"extension":{},"message":"[worker-us-central1-app-552c8755-0c93-4a92-a71e-7f6cfa56c540]: IDLE"}}
+[debug] [2023-05-02T19:41:37.626Z] [work-queue] {"queuedWork":[],"queueLength":0,"runningWork":[],"workRunningCount":0}
+[debug] [2023-05-02T19:44:15.613Z] File /home/michael/Escritorio/personalProyects/snaptrash-proyect/functions/index.js changed, reloading triggers {"metadata":{"emulator":{"name":"functions"},"message":"File /home/michael/Escritorio/personalProyects/snaptrash-proyect/functions/index.js changed, reloading triggers"}}
+[debug] [2023-05-02T19:44:16.614Z] Validating nodejs source
+[debug] [2023-05-02T19:44:17.257Z] checkFunctionsSDKVersion encountered error:Unexpected end of JSON input {}
+[debug] [2023-05-02T19:44:17.257Z] > [functions] package.json contents: {
+  "name": "functions",
+  "description": "Cloud Functions for Firebase",
+  "scripts": {
+    "lint": "eslint .",
+    "serve": "firebase emulators:start --only functions",
+    "shell": "firebase functions:shell",
+    "start": "npm run shell",
+    "deploy": "firebase deploy --only functions",
+    "logs": "firebase functions:log"
+  },
+  "engines": {
+    "node": "16"
+  },
+  "main": "index.js",
+  "dependencies": {
+    "firebase-admin": "^11.5.0",
+    "firebase-functions": "^4.2.0"
+  },
+  "devDependencies": {
+    "eslint": "^8.15.0",
+    "eslint-config-google": "^0.14.0",
+    "firebase-functions-test": "^3.0.0"
+  },
+  "private": true
+}
+[debug] [2023-05-02T19:44:17.258Z] Building nodejs source
+[debug] [2023-05-02T19:44:17.258Z] Failed to find version of module node: reached end of search path /home/michael/Escritorio/personalProyects/snaptrash-proyect/functions/node_modules
+[warn] ⚠  functions: Your requested "node" version "16" doesn't match your global version "18". Using node@18 from host. 
+[debug] [2023-05-02T19:44:17.258Z] Could not find functions.yaml. Must use http discovery
+[debug] [2023-05-02T19:44:17.259Z] Found firebase-functions binary at '/home/michael/Escritorio/personalProyects/snaptrash-proyect/functions/node_modules/.bin/firebase-functions'
+[debug] [2023-05-02T19:44:17.513Z] Got response from /__/functions.yaml {"endpoints":{"app":{"platform":"gcfv1","availableMemoryMb":null,"timeoutSeconds":null,"minInstances":null,"maxInstances":null,"ingressSettings":null,"serviceAccountEmail":null,"vpc":null,"httpsTrigger":{},"entryPoint":"app"}},"specVersion":"v1alpha1","requiredAPIs":[]}
+[info] ✔  functions: Loaded functions definitions from source: app. {"metadata":{"emulator":{"name":"functions"},"message":"Loaded functions definitions from source: app."}}
+[debug] [2023-05-02T19:44:17.520Z] [worker-pool] Shutting down IDLE worker (us-central1-app) {"metadata":{"emulator":{"name":"functions"},"message":"[worker-pool] Shutting down IDLE worker (us-central1-app)"}}
+[debug] [2023-05-02T19:44:17.520Z] [worker-us-central1-app-552c8755-0c93-4a92-a71e-7f6cfa56c540]: FINISHING {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-app"},"extension":{},"message":"[worker-us-central1-app-552c8755-0c93-4a92-a71e-7f6cfa56c540]: FINISHING"}}
+[debug] [2023-05-02T19:44:17.524Z] [worker-us-central1-app-552c8755-0c93-4a92-a71e-7f6cfa56c540]: exited {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-app"},"extension":{},"message":"[worker-us-central1-app-552c8755-0c93-4a92-a71e-7f6cfa56c540]: exited"}}
+[debug] [2023-05-02T19:44:17.524Z] [worker-us-central1-app-552c8755-0c93-4a92-a71e-7f6cfa56c540]: FINISHED {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-app"},"extension":{},"message":"[worker-us-central1-app-552c8755-0c93-4a92-a71e-7f6cfa56c540]: FINISHED"}}
+[debug] [2023-05-02T19:45:29.931Z] [work-queue] {"queuedWork":["/snaptrash-9ee8c/us-central1/app/hello-world-2023-05-02T19:45:29.931Z"],"queueLength":1,"runningWork":[],"workRunningCount":0}
+[debug] [2023-05-02T19:45:29.931Z] [work-queue] {"queuedWork":[],"queueLength":0,"runningWork":["/snaptrash-9ee8c/us-central1/app/hello-world-2023-05-02T19:45:29.931Z"],"workRunningCount":1}
+[debug] [2023-05-02T19:45:29.931Z] Accepted request GET /snaptrash-9ee8c/us-central1/app/hello-world --> us-central1-app
+[debug] [2023-05-02T19:45:29.933Z] [functions] Runtime ready! Sending request! {"metadata":{"emulator":{"name":"functions"},"message":"[functions] Runtime ready! Sending request!"}}
+[debug] [2023-05-02T19:45:29.933Z] [functions] Got req.url=/snaptrash-9ee8c/us-central1/app/hello-world, mapping to path=/hello-world {"metadata":{"emulator":{"name":"functions"},"message":"[functions] Got req.url=/snaptrash-9ee8c/us-central1/app/hello-world, mapping to path=/hello-world"}}
+[debug] [2023-05-02T19:45:29.934Z] [worker-pool] Cleaned up workers for us-central1-app: 1 --> 0 {"metadata":{"emulator":{"name":"functions"},"message":"[worker-pool] Cleaned up workers for us-central1-app: 1 --> 0"}}
+[debug] [2023-05-02T19:45:29.940Z] [worker-pool] addWorker(us-central1-app) {"metadata":{"emulator":{"name":"functions"},"message":"[worker-pool] addWorker(us-central1-app)"}}
+[debug] [2023-05-02T19:45:29.940Z] [worker-pool] Adding worker with key us-central1-app, total=1 {"metadata":{"emulator":{"name":"functions"},"message":"[worker-pool] Adding worker with key us-central1-app, total=1"}}
+[debug] [2023-05-02T19:45:30.405Z] [runtime-status] [52420] Resolved module firebase-admin {"declared":true,"installed":true,"version":"11.7.0","resolution":"/home/michael/Escritorio/personalProyects/snaptrash-proyect/functions/node_modules/firebase-admin/lib/index.js"} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-app"},"extension":{},"message":"[runtime-status] [52420] Resolved module firebase-admin {\"declared\":true,\"installed\":true,\"version\":\"11.7.0\",\"resolution\":\"/home/michael/Escritorio/personalProyects/snaptrash-proyect/functions/node_modules/firebase-admin/lib/index.js\"}"}}
+[debug] [2023-05-02T19:45:30.405Z] [runtime-status] [52420] Resolved module firebase-functions {"declared":true,"installed":true,"version":"4.3.1","resolution":"/home/michael/Escritorio/personalProyects/snaptrash-proyect/functions/node_modules/firebase-functions/lib/v1/index.js"} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-app"},"extension":{},"message":"[runtime-status] [52420] Resolved module firebase-functions {\"declared\":true,\"installed\":true,\"version\":\"4.3.1\",\"resolution\":\"/home/michael/Escritorio/personalProyects/snaptrash-proyect/functions/node_modules/firebase-functions/lib/v1/index.js\"}"}}
+[debug] [2023-05-02T19:45:30.406Z] [runtime-status] [52420] Outgoing network have been stubbed. [{"name":"http","status":"mocked"},{"name":"http","status":"mocked"},{"name":"https","status":"mocked"},{"name":"https","status":"mocked"},{"name":"net","status":"mocked"}] {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-app"},"extension":{},"message":"[runtime-status] [52420] Outgoing network have been stubbed. [{\"name\":\"http\",\"status\":\"mocked\"},{\"name\":\"http\",\"status\":\"mocked\"},{\"name\":\"https\",\"status\":\"mocked\"},{\"name\":\"https\",\"status\":\"mocked\"},{\"name\":\"net\",\"status\":\"mocked\"}]"}}
+[debug] [2023-05-02T19:45:30.406Z] [runtime-status] [52420] Resolved module firebase-functions {"declared":true,"installed":true,"version":"4.3.1","resolution":"/home/michael/Escritorio/personalProyects/snaptrash-proyect/functions/node_modules/firebase-functions/lib/v1/index.js"} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-app"},"extension":{},"message":"[runtime-status] [52420] Resolved module firebase-functions {\"declared\":true,\"installed\":true,\"version\":\"4.3.1\",\"resolution\":\"/home/michael/Escritorio/personalProyects/snaptrash-proyect/functions/node_modules/firebase-functions/lib/v1/index.js\"}"}}
+[debug] [2023-05-02T19:45:30.505Z] [runtime-status] [52420] Checked functions.config() {"config":{}} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-app"},"extension":{},"message":"[runtime-status] [52420] Checked functions.config() {\"config\":{}}"}}
+[debug] [2023-05-02T19:45:30.505Z] [runtime-status] [52420] firebase-functions has been stubbed. {"functionsResolution":{"declared":true,"installed":true,"version":"4.3.1","resolution":"/home/michael/Escritorio/personalProyects/snaptrash-proyect/functions/node_modules/firebase-functions/lib/v1/index.js"}} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-app"},"extension":{},"message":"[runtime-status] [52420] firebase-functions has been stubbed. {\"functionsResolution\":{\"declared\":true,\"installed\":true,\"version\":\"4.3.1\",\"resolution\":\"/home/michael/Escritorio/personalProyects/snaptrash-proyect/functions/node_modules/firebase-functions/lib/v1/index.js\"}}"}}
+[debug] [2023-05-02T19:45:30.505Z] [runtime-status] [52420] Resolved module firebase-functions {"declared":true,"installed":true,"version":"4.3.1","resolution":"/home/michael/Escritorio/personalProyects/snaptrash-proyect/functions/node_modules/firebase-functions/lib/v1/index.js"} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-app"},"extension":{},"message":"[runtime-status] [52420] Resolved module firebase-functions {\"declared\":true,\"installed\":true,\"version\":\"4.3.1\",\"resolution\":\"/home/michael/Escritorio/personalProyects/snaptrash-proyect/functions/node_modules/firebase-functions/lib/v1/index.js\"}"}}
+[debug] [2023-05-02T19:45:30.506Z] [runtime-status] [52420] Resolved module firebase-admin {"declared":true,"installed":true,"version":"11.7.0","resolution":"/home/michael/Escritorio/personalProyects/snaptrash-proyect/functions/node_modules/firebase-admin/lib/index.js"} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-app"},"extension":{},"message":"[runtime-status] [52420] Resolved module firebase-admin {\"declared\":true,\"installed\":true,\"version\":\"11.7.0\",\"resolution\":\"/home/michael/Escritorio/personalProyects/snaptrash-proyect/functions/node_modules/firebase-admin/lib/index.js\"}"}}
+[debug] [2023-05-02T19:45:30.507Z] [runtime-status] [52420] Resolved module firebase-functions {"declared":true,"installed":true,"version":"4.3.1","resolution":"/home/michael/Escritorio/personalProyects/snaptrash-proyect/functions/node_modules/firebase-functions/lib/v1/index.js"} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-app"},"extension":{},"message":"[runtime-status] [52420] Resolved module firebase-functions {\"declared\":true,\"installed\":true,\"version\":\"4.3.1\",\"resolution\":\"/home/michael/Escritorio/personalProyects/snaptrash-proyect/functions/node_modules/firebase-functions/lib/v1/index.js\"}"}}
+[debug] [2023-05-02T19:45:30.507Z] [runtime-status] [52420] firebase-admin has been stubbed. {"adminResolution":{"declared":true,"installed":true,"version":"11.7.0","resolution":"/home/michael/Escritorio/personalProyects/snaptrash-proyect/functions/node_modules/firebase-admin/lib/index.js"}} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-app"},"extension":{},"message":"[runtime-status] [52420] firebase-admin has been stubbed. {\"adminResolution\":{\"declared\":true,\"installed\":true,\"version\":\"11.7.0\",\"resolution\":\"/home/michael/Escritorio/personalProyects/snaptrash-proyect/functions/node_modules/firebase-admin/lib/index.js\"}}"}}
+[debug] [2023-05-02T19:45:30.557Z] [runtime-status] [52420] initializeApp(DEFAULT) {"credential":{"implicit":false,"projectId":"snaptrash-9ee8c","privateKey":"-----BEGIN PRIVATE KEY-----\nMIIEvQIBADANBgkqhkiG9w0BAQEFAASCBKcwggSjAgEAAoIBAQCbgmWtfVaVEoZD\naN6/HvCbV4onNP3Jmxp3lCM/tdCeLbN2euK8JJAVqjL1c8OYMAwtF+ffMlGHQJ/b\nY9G7+++ThmhKcPN6FcEOwa1ydK1ou7E66OPwwlhRO2YVDojdJfhYrZxupxCWDmSw\nMR0/3eV0XFsA+akTLXEl4Tc75Q99lKbXdVdMxsVexarsQtiQbAjY41G+AdX1Sy23\n3xxSEptvNP+xq4EtouXfjw6ijj2FE/DQKuqgYOO4IaQa+at0bCGmHAp9YGAsIp0v\nzWZfdNxK1sC05WGpKDH8zE9qOgE3K9VPDdSkHlIsBG81XiOBcLnIUmB+HyBz1Gzs\nozlq0bPxAgMBAAECggEACyeeXYR5GnZatSknmTQB9FKiMU/GyJhcnKk+ogpLrZz/\nm4cTDoXc5ADyaNLl+9uuc+mcE1GLsZT8IoOVftOCiuWAQ564iFBZKdLQuz4NVk7o\nVp5wA0wdg64sE2SYgqx/lPTXHMTVFr5vkIflXjhvhho92OMPsrV2wU3XZW933f0Y\nFwAdzK5CAwdotTvQDAVi6AvLj3Rtcg7L2UjnQ0Td4QyP5dY0I5fj7PddFmBStiA6\nrfjdm0EgeZ/qRG6nLOI5gsfWXLvpqoPDvio/f8Xw3EykoWovUDhP60mVfwyxV4yu\nz3K6MDyyhWfei/GB5nJONJJnHwMEETk5v3UI/xjHMQKBgQDQ72po1ZN2EDzE7Z93\nPqrfKSQ29cSPeus6p8oRbFHEOZHe8p2AvC7WTWcPqkFoavCs0GJaddU1hW4qw+KN\nrjsza3NkokmKrjW+8pliDZvua82CUpL7sK9/dK3Q5OKoemXmxV9z2lP7BwGY0ye3\nWUfwAkWaFGwlMVkwtnCv/qegHQKBgQC+ihgRAIleKGRtSLmjOISAk1YiSJgPSYOf\noYyLdbqt08E+yNnxULkxO5vuUgWnK7r99Qacr0VIbrDdr0J8LCqXlqvaYA6W1/kN\nZvjJV5iG73RdCjinu2RExOttAX3haPaYpxzj3fINZ6UC8HM0V2qXMLJyzLGPsfAZ\ntBzWonhC5QKBgQCkBnDpYFJl65VpnIsGWGJY07mklAj+AyfMYpFWYE1I2VFVT+6q\ndBHpF9cDC0xSJzJO2UF9dugtHlVAqYugYtoDIiXzKRzHDMEQ6O/VdI2n/WXXG/Bc\nO3drfjQ+vJHcZkq9gtHO5+XqOrPcQFj7rdG18HKn5cSI5lb40SFiaW87WQKBgHLj\n18EgvrPMzUlsKat2n8bbkHtZpH7LSBeQFKve0DKSVZqjB29PymsaU1qvkIMNhlIt\nVdBSiwcy32i8je1LwF7pVjR16TYhgiYHqgnVzL3IUzTqveC9yKcCyiZPWPT7En5X\nfb8UjChzD3enPwAXmckSbvdz37kShQEqrpzpGHTVAoGAAZYYJKXHC9hEw/oAy/J2\nIT/c9aYs7kfVS9x1LPPtDZr3P6HYLIO9RPrpFb8zent1wl2XYERLHxXBRHda5egG\n8GkBW9ZDBnRcIJHTyfs4cxhanp0d2NwvQpxnTzXUfqh3LZ8sSAXRqV48g81Lj++7\nsJPuikgg76YlTny3fg/UwEM=\n-----END PRIVATE KEY-----\n","clientEmail":"firebase-adminsdk-13dqt@snaptrash-9ee8c.iam.gserviceaccount.com","httpClient":{"retry":{"maxRetries":4,"statusCodes":[503],"ioErrorCodes":["ECONNRESET","ETIMEDOUT"],"backOffFactor":0.5,"maxDelayInMillis":60000}}}} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-app"},"extension":{},"message":"[runtime-status] [52420] initializeApp(DEFAULT) {\"credential\":{\"implicit\":false,\"projectId\":\"snaptrash-9ee8c\",\"privateKey\":\"-----BEGIN PRIVATE KEY-----\\nMIIEvQIBADANBgkqhkiG9w0BAQEFAASCBKcwggSjAgEAAoIBAQCbgmWtfVaVEoZD\\naN6/HvCbV4onNP3Jmxp3lCM/tdCeLbN2euK8JJAVqjL1c8OYMAwtF+ffMlGHQJ/b\\nY9G7+++ThmhKcPN6FcEOwa1ydK1ou7E66OPwwlhRO2YVDojdJfhYrZxupxCWDmSw\\nMR0/3eV0XFsA+akTLXEl4Tc75Q99lKbXdVdMxsVexarsQtiQbAjY41G+AdX1Sy23\\n3xxSEptvNP+xq4EtouXfjw6ijj2FE/DQKuqgYOO4IaQa+at0bCGmHAp9YGAsIp0v\\nzWZfdNxK1sC05WGpKDH8zE9qOgE3K9VPDdSkHlIsBG81XiOBcLnIUmB+HyBz1Gzs\\nozlq0bPxAgMBAAECggEACyeeXYR5GnZatSknmTQB9FKiMU/GyJhcnKk+ogpLrZz/\\nm4cTDoXc5ADyaNLl+9uuc+mcE1GLsZT8IoOVftOCiuWAQ564iFBZKdLQuz4NVk7o\\nVp5wA0wdg64sE2SYgqx/lPTXHMTVFr5vkIflXjhvhho92OMPsrV2wU3XZW933f0Y\\nFwAdzK5CAwdotTvQDAVi6AvLj3Rtcg7L2UjnQ0Td4QyP5dY0I5fj7PddFmBStiA6\\nrfjdm0EgeZ/qRG6nLOI5gsfWXLvpqoPDvio/f8Xw3EykoWovUDhP60mVfwyxV4yu\\nz3K6MDyyhWfei/GB5nJONJJnHwMEETk5v3UI/xjHMQKBgQDQ72po1ZN2EDzE7Z93\\nPqrfKSQ29cSPeus6p8oRbFHEOZHe8p2AvC7WTWcPqkFoavCs0GJaddU1hW4qw+KN\\nrjsza3NkokmKrjW+8pliDZvua82CUpL7sK9/dK3Q5OKoemXmxV9z2lP7BwGY0ye3\\nWUfwAkWaFGwlMVkwtnCv/qegHQKBgQC+ihgRAIleKGRtSLmjOISAk1YiSJgPSYOf\\noYyLdbqt08E+yNnxULkxO5vuUgWnK7r99Qacr0VIbrDdr0J8LCqXlqvaYA6W1/kN\\nZvjJV5iG73RdCjinu2RExOttAX3haPaYpxzj3fINZ6UC8HM0V2qXMLJyzLGPsfAZ\\ntBzWonhC5QKBgQCkBnDpYFJl65VpnIsGWGJY07mklAj+AyfMYpFWYE1I2VFVT+6q\\ndBHpF9cDC0xSJzJO2UF9dugtHlVAqYugYtoDIiXzKRzHDMEQ6O/VdI2n/WXXG/Bc\\nO3drfjQ+vJHcZkq9gtHO5+XqOrPcQFj7rdG18HKn5cSI5lb40SFiaW87WQKBgHLj\\n18EgvrPMzUlsKat2n8bbkHtZpH7LSBeQFKve0DKSVZqjB29PymsaU1qvkIMNhlIt\\nVdBSiwcy32i8je1LwF7pVjR16TYhgiYHqgnVzL3IUzTqveC9yKcCyiZPWPT7En5X\\nfb8UjChzD3enPwAXmckSbvdz37kShQEqrpzpGHTVAoGAAZYYJKXHC9hEw/oAy/J2\\nIT/c9aYs7kfVS9x1LPPtDZr3P6HYLIO9RPrpFb8zent1wl2XYERLHxXBRHda5egG\\n8GkBW9ZDBnRcIJHTyfs4cxhanp0d2NwvQpxnTzXUfqh3LZ8sSAXRqV48g81Lj++7\\nsJPuikgg76YlTny3fg/UwEM=\\n-----END PRIVATE KEY-----\\n\",\"clientEmail\":\"firebase-adminsdk-13dqt@snaptrash-9ee8c.iam.gserviceaccount.com\",\"httpClient\":{\"retry\":{\"maxRetries\":4,\"statusCodes\":[503],\"ioErrorCodes\":[\"ECONNRESET\",\"ETIMEDOUT\"],\"backOffFactor\":0.5,\"maxDelayInMillis\":60000}}}}"}}
+[debug] [2023-05-02T19:45:30.563Z] [runtime-status] [52420] Functions runtime initialized. {"cwd":"/home/michael/Escritorio/personalProyects/snaptrash-proyect/functions","node_version":"18.16.0"} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-app"},"extension":{},"message":"[runtime-status] [52420] Functions runtime initialized. {\"cwd\":\"/home/michael/Escritorio/personalProyects/snaptrash-proyect/functions\",\"node_version\":\"18.16.0\"}"}}
+[debug] [2023-05-02T19:45:30.563Z] [runtime-status] [52420] Listening to port: /tmp/fire_emu_5363e984d6c9f239.sock {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-app"},"extension":{},"message":"[runtime-status] [52420] Listening to port: /tmp/fire_emu_5363e984d6c9f239.sock"}}
+[debug] [2023-05-02T19:45:30.647Z] [worker-us-central1-app-086b0133-8099-4a69-92cd-09ce84bd9b16]: IDLE {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-app"},"extension":{},"message":"[worker-us-central1-app-086b0133-8099-4a69-92cd-09ce84bd9b16]: IDLE"}}
+[debug] [2023-05-02T19:45:30.648Z] [worker-pool] submitRequest(triggerId=us-central1-app) {"metadata":{"emulator":{"name":"functions"},"message":"[worker-pool] submitRequest(triggerId=us-central1-app)"}}
+[info] i  functions: Beginning execution of "us-central1-app" {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-app"},"extension":{},"message":"Beginning execution of \"us-central1-app\""}}
+[debug] [2023-05-02T19:45:30.648Z] [worker-us-central1-app-086b0133-8099-4a69-92cd-09ce84bd9b16]: BUSY {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-app"},"extension":{},"message":"[worker-us-central1-app-086b0133-8099-4a69-92cd-09ce84bd9b16]: BUSY"}}
+[info] i  functions: Finished "us-central1-app" in 3.43256ms {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-app"},"extension":{},"message":"Finished \"us-central1-app\" in 3.43256ms"}}
+[debug] [2023-05-02T19:45:30.652Z] [worker-us-central1-app-086b0133-8099-4a69-92cd-09ce84bd9b16]: IDLE {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-app"},"extension":{},"message":"[worker-us-central1-app-086b0133-8099-4a69-92cd-09ce84bd9b16]: IDLE"}}
+[debug] [2023-05-02T19:45:30.652Z] [work-queue] {"queuedWork":[],"queueLength":0,"runningWork":[],"workRunningCount":0}
+[debug] [2023-05-02T19:52:10.299Z] File /home/michael/Escritorio/personalProyects/snaptrash-proyect/functions/index.js changed, reloading triggers {"metadata":{"emulator":{"name":"functions"},"message":"File /home/michael/Escritorio/personalProyects/snaptrash-proyect/functions/index.js changed, reloading triggers"}}
+[debug] [2023-05-02T19:52:11.299Z] Validating nodejs source
+[debug] [2023-05-02T19:52:11.871Z] checkFunctionsSDKVersion encountered error:Unexpected end of JSON input {}
+[debug] [2023-05-02T19:52:11.872Z] > [functions] package.json contents: {
+  "name": "functions",
+  "description": "Cloud Functions for Firebase",
+  "scripts": {
+    "lint": "eslint .",
+    "serve": "firebase emulators:start --only functions",
+    "shell": "firebase functions:shell",
+    "start": "npm run shell",
+    "deploy": "firebase deploy --only functions",
+    "logs": "firebase functions:log"
+  },
+  "engines": {
+    "node": "16"
+  },
+  "main": "index.js",
+  "dependencies": {
+    "firebase-admin": "^11.5.0",
+    "firebase-functions": "^4.2.0"
+  },
+  "devDependencies": {
+    "eslint": "^8.15.0",
+    "eslint-config-google": "^0.14.0",
+    "firebase-functions-test": "^3.0.0"
+  },
+  "private": true
+}
+[debug] [2023-05-02T19:52:11.872Z] Building nodejs source
+[debug] [2023-05-02T19:52:11.872Z] Failed to find version of module node: reached end of search path /home/michael/Escritorio/personalProyects/snaptrash-proyect/functions/node_modules
+[warn] ⚠  functions: Your requested "node" version "16" doesn't match your global version "18". Using node@18 from host. 
+[debug] [2023-05-02T19:52:11.873Z] Could not find functions.yaml. Must use http discovery
+[debug] [2023-05-02T19:52:11.873Z] Found firebase-functions binary at '/home/michael/Escritorio/personalProyects/snaptrash-proyect/functions/node_modules/.bin/firebase-functions'
+[debug] [2023-05-02T19:52:12.146Z] Got response from /__/functions.yaml {"endpoints":{"app":{"platform":"gcfv1","availableMemoryMb":null,"timeoutSeconds":null,"minInstances":null,"maxInstances":null,"ingressSettings":null,"serviceAccountEmail":null,"vpc":null,"httpsTrigger":{},"entryPoint":"app"}},"specVersion":"v1alpha1","requiredAPIs":[]}
+[info] ✔  functions: Loaded functions definitions from source: app. {"metadata":{"emulator":{"name":"functions"},"message":"Loaded functions definitions from source: app."}}
+[debug] [2023-05-02T19:52:12.155Z] [worker-pool] Shutting down IDLE worker (us-central1-app) {"metadata":{"emulator":{"name":"functions"},"message":"[worker-pool] Shutting down IDLE worker (us-central1-app)"}}
+[debug] [2023-05-02T19:52:12.155Z] [worker-us-central1-app-086b0133-8099-4a69-92cd-09ce84bd9b16]: FINISHING {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-app"},"extension":{},"message":"[worker-us-central1-app-086b0133-8099-4a69-92cd-09ce84bd9b16]: FINISHING"}}
+[debug] [2023-05-02T19:52:12.160Z] [worker-us-central1-app-086b0133-8099-4a69-92cd-09ce84bd9b16]: exited {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-app"},"extension":{},"message":"[worker-us-central1-app-086b0133-8099-4a69-92cd-09ce84bd9b16]: exited"}}
+[debug] [2023-05-02T19:52:12.160Z] [worker-us-central1-app-086b0133-8099-4a69-92cd-09ce84bd9b16]: FINISHED {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-app"},"extension":{},"message":"[worker-us-central1-app-086b0133-8099-4a69-92cd-09ce84bd9b16]: FINISHED"}}
+[debug] [2023-05-02T19:54:29.861Z] File /home/michael/Escritorio/personalProyects/snaptrash-proyect/functions/index.js changed, reloading triggers {"metadata":{"emulator":{"name":"functions"},"message":"File /home/michael/Escritorio/personalProyects/snaptrash-proyect/functions/index.js changed, reloading triggers"}}
+[debug] [2023-05-02T19:54:30.862Z] Validating nodejs source
+[debug] [2023-05-02T19:54:31.546Z] checkFunctionsSDKVersion encountered error:Unexpected end of JSON input {}
+[debug] [2023-05-02T19:54:31.547Z] > [functions] package.json contents: {
+  "name": "functions",
+  "description": "Cloud Functions for Firebase",
+  "scripts": {
+    "lint": "eslint .",
+    "serve": "firebase emulators:start --only functions",
+    "shell": "firebase functions:shell",
+    "start": "npm run shell",
+    "deploy": "firebase deploy --only functions",
+    "logs": "firebase functions:log"
+  },
+  "engines": {
+    "node": "16"
+  },
+  "main": "index.js",
+  "dependencies": {
+    "firebase-admin": "^11.5.0",
+    "firebase-functions": "^4.2.0"
+  },
+  "devDependencies": {
+    "eslint": "^8.15.0",
+    "eslint-config-google": "^0.14.0",
+    "firebase-functions-test": "^3.0.0"
+  },
+  "private": true
+}
+[debug] [2023-05-02T19:54:31.547Z] Building nodejs source
+[debug] [2023-05-02T19:54:31.547Z] Failed to find version of module node: reached end of search path /home/michael/Escritorio/personalProyects/snaptrash-proyect/functions/node_modules
+[warn] ⚠  functions: Your requested "node" version "16" doesn't match your global version "18". Using node@18 from host. 
+[debug] [2023-05-02T19:54:31.548Z] Could not find functions.yaml. Must use http discovery
+[debug] [2023-05-02T19:54:31.549Z] Found firebase-functions binary at '/home/michael/Escritorio/personalProyects/snaptrash-proyect/functions/node_modules/.bin/firebase-functions'
+[debug] [2023-05-02T19:54:31.782Z] Got response from /__/functions.yaml {"endpoints":{"app":{"platform":"gcfv1","availableMemoryMb":null,"timeoutSeconds":null,"minInstances":null,"maxInstances":null,"ingressSettings":null,"serviceAccountEmail":null,"vpc":null,"httpsTrigger":{},"entryPoint":"app"}},"specVersion":"v1alpha1","requiredAPIs":[]}
+[info] ✔  functions: Loaded functions definitions from source: app. {"metadata":{"emulator":{"name":"functions"},"message":"Loaded functions definitions from source: app."}}
+[debug] [2023-05-02T19:55:53.636Z] File /home/michael/Escritorio/personalProyects/snaptrash-proyect/functions/index.js changed, reloading triggers {"metadata":{"emulator":{"name":"functions"},"message":"File /home/michael/Escritorio/personalProyects/snaptrash-proyect/functions/index.js changed, reloading triggers"}}
+[debug] [2023-05-02T19:55:54.637Z] Validating nodejs source
+[debug] [2023-05-02T19:55:55.363Z] checkFunctionsSDKVersion encountered error:Unexpected end of JSON input {}
+[debug] [2023-05-02T19:55:55.364Z] > [functions] package.json contents: {
+  "name": "functions",
+  "description": "Cloud Functions for Firebase",
+  "scripts": {
+    "lint": "eslint .",
+    "serve": "firebase emulators:start --only functions",
+    "shell": "firebase functions:shell",
+    "start": "npm run shell",
+    "deploy": "firebase deploy --only functions",
+    "logs": "firebase functions:log"
+  },
+  "engines": {
+    "node": "16"
+  },
+  "main": "index.js",
+  "dependencies": {
+    "firebase-admin": "^11.5.0",
+    "firebase-functions": "^4.2.0"
+  },
+  "devDependencies": {
+    "eslint": "^8.15.0",
+    "eslint-config-google": "^0.14.0",
+    "firebase-functions-test": "^3.0.0"
+  },
+  "private": true
+}
+[debug] [2023-05-02T19:55:55.364Z] Building nodejs source
+[debug] [2023-05-02T19:55:55.364Z] Failed to find version of module node: reached end of search path /home/michael/Escritorio/personalProyects/snaptrash-proyect/functions/node_modules
+[warn] ⚠  functions: Your requested "node" version "16" doesn't match your global version "18". Using node@18 from host. 
+[debug] [2023-05-02T19:55:55.364Z] Could not find functions.yaml. Must use http discovery
+[debug] [2023-05-02T19:55:55.365Z] Found firebase-functions binary at '/home/michael/Escritorio/personalProyects/snaptrash-proyect/functions/node_modules/.bin/firebase-functions'
+[debug] [2023-05-02T19:55:55.655Z] Got response from /__/functions.yaml Failed to generate manifest from function source: Error: Cannot find module 'firebase-admin'
+Require stack:
+- /home/michael/Escritorio/personalProyects/snaptrash-proyect/src/routes/report_routes.js
+- /home/michael/Escritorio/personalProyects/snaptrash-proyect/functions/index.js
+- /home/michael/Escritorio/personalProyects/snaptrash-proyect/functions/node_modules/firebase-functions/lib/runtime/loader.js
+- /home/michael/Escritorio/personalProyects/snaptrash-proyect/functions/node_modules/firebase-functions/lib/bin/firebase-functions.js
+[debug] [2023-05-02T19:55:55.656Z] Failed to parse functions.yamlincomplete explicit mapping pair; a key node is missed; or followed by a non-tabulated empty line at line 1, column 56:
+     ... fest from function source: Error: Cannot find module 'firebase-a ... 
+                                         ^ {"name":"YAMLException","reason":"incomplete explicit mapping pair; a key node is missed; or followed by a non-tabulated empty line","mark":{"name":null,"buffer":"Failed to generate manifest from function source: Error: Cannot find module 'firebase-admin'\nRequire stack:\n- /home/michael/Escritorio/personalProyects/snaptrash-proyect/src/routes/report_routes.js\n- /home/michael/Escritorio/personalProyects/snaptrash-proyect/functions/index.js\n- /home/michael/Escritorio/personalProyects/snaptrash-proyect/functions/node_modules/firebase-functions/lib/runtime/loader.js\n- /home/michael/Escritorio/personalProyects/snaptrash-proyect/functions/node_modules/firebase-functions/lib/bin/firebase-functions.js\n\u0000","position":55,"line":0,"column":55},"message":"incomplete explicit mapping pair; a key node is missed; or followed by a non-tabulated empty line at line 1, column 56:\n     ... fest from function source: Error: Cannot find module 'firebase-a ... \n                                         ^"}
+[error] ⬢  functions: Failed to load function definition from source: FirebaseError: Failed to load function definition from source: Failed to generate manifest from function source: Error: Cannot find module 'firebase-admin'
+Require stack:
+- /home/michael/Escritorio/personalProyects/snaptrash-proyect/src/routes/report_routes.js
+- /home/michael/Escritorio/personalProyects/snaptrash-proyect/functions/index.js
+- /home/michael/Escritorio/personalProyects/snaptrash-proyect/functions/node_modules/firebase-functions/lib/runtime/loader.js
+- /home/michael/Escritorio/personalProyects/snaptrash-proyect/functions/node_modules/firebase-functions/lib/bin/firebase-functions.js {"metadata":{"emulator":{"name":"functions"},"message":"Failed to load function definition from source: FirebaseError: Failed to load function definition from source: Failed to generate manifest from function source: Error: Cannot find module 'firebase-admin'\nRequire stack:\n- /home/michael/Escritorio/personalProyects/snaptrash-proyect/src/routes/report_routes.js\n- /home/michael/Escritorio/personalProyects/snaptrash-proyect/functions/index.js\n- /home/michael/Escritorio/personalProyects/snaptrash-proyect/functions/node_modules/firebase-functions/lib/runtime/loader.js\n- /home/michael/Escritorio/personalProyects/snaptrash-proyect/functions/node_modules/firebase-functions/lib/bin/firebase-functions.js"}}
+[debug] [2023-05-02T19:56:01.634Z] File /home/michael/Escritorio/personalProyects/snaptrash-proyect/functions/index.js changed, reloading triggers {"metadata":{"emulator":{"name":"functions"},"message":"File /home/michael/Escritorio/personalProyects/snaptrash-proyect/functions/index.js changed, reloading triggers"}}
+[debug] [2023-05-02T19:56:02.635Z] Validating nodejs source
+[debug] [2023-05-02T19:56:03.285Z] checkFunctionsSDKVersion encountered error:Unexpected end of JSON input {}
+[debug] [2023-05-02T19:56:03.285Z] > [functions] package.json contents: {
+  "name": "functions",
+  "description": "Cloud Functions for Firebase",
+  "scripts": {
+    "lint": "eslint .",
+    "serve": "firebase emulators:start --only functions",
+    "shell": "firebase functions:shell",
+    "start": "npm run shell",
+    "deploy": "firebase deploy --only functions",
+    "logs": "firebase functions:log"
+  },
+  "engines": {
+    "node": "16"
+  },
+  "main": "index.js",
+  "dependencies": {
+    "firebase-admin": "^11.5.0",
+    "firebase-functions": "^4.2.0"
+  },
+  "devDependencies": {
+    "eslint": "^8.15.0",
+    "eslint-config-google": "^0.14.0",
+    "firebase-functions-test": "^3.0.0"
+  },
+  "private": true
+}
+[debug] [2023-05-02T19:56:03.285Z] Building nodejs source
+[debug] [2023-05-02T19:56:03.286Z] Failed to find version of module node: reached end of search path /home/michael/Escritorio/personalProyects/snaptrash-proyect/functions/node_modules
+[warn] ⚠  functions: Your requested "node" version "16" doesn't match your global version "18". Using node@18 from host. 
+[debug] [2023-05-02T19:56:03.286Z] Could not find functions.yaml. Must use http discovery
+[debug] [2023-05-02T19:56:03.287Z] Found firebase-functions binary at '/home/michael/Escritorio/personalProyects/snaptrash-proyect/functions/node_modules/.bin/firebase-functions'
+[debug] [2023-05-02T19:56:03.551Z] Got response from /__/functions.yaml Failed to generate manifest from function source: Error: Cannot find module 'firebase-admin'
+Require stack:
+- /home/michael/Escritorio/personalProyects/snaptrash-proyect/src/routes/report_routes.js
+- /home/michael/Escritorio/personalProyects/snaptrash-proyect/functions/index.js
+- /home/michael/Escritorio/personalProyects/snaptrash-proyect/functions/node_modules/firebase-functions/lib/runtime/loader.js
+- /home/michael/Escritorio/personalProyects/snaptrash-proyect/functions/node_modules/firebase-functions/lib/bin/firebase-functions.js
+[debug] [2023-05-02T19:56:03.551Z] Failed to parse functions.yamlincomplete explicit mapping pair; a key node is missed; or followed by a non-tabulated empty line at line 1, column 56:
+     ... fest from function source: Error: Cannot find module 'firebase-a ... 
+                                         ^ {"name":"YAMLException","reason":"incomplete explicit mapping pair; a key node is missed; or followed by a non-tabulated empty line","mark":{"name":null,"buffer":"Failed to generate manifest from function source: Error: Cannot find module 'firebase-admin'\nRequire stack:\n- /home/michael/Escritorio/personalProyects/snaptrash-proyect/src/routes/report_routes.js\n- /home/michael/Escritorio/personalProyects/snaptrash-proyect/functions/index.js\n- /home/michael/Escritorio/personalProyects/snaptrash-proyect/functions/node_modules/firebase-functions/lib/runtime/loader.js\n- /home/michael/Escritorio/personalProyects/snaptrash-proyect/functions/node_modules/firebase-functions/lib/bin/firebase-functions.js\n\u0000","position":55,"line":0,"column":55},"message":"incomplete explicit mapping pair; a key node is missed; or followed by a non-tabulated empty line at line 1, column 56:\n     ... fest from function source: Error: Cannot find module 'firebase-a ... \n                                         ^"}
+[error] ⬢  functions: Failed to load function definition from source: FirebaseError: Failed to load function definition from source: Failed to generate manifest from function source: Error: Cannot find module 'firebase-admin'
+Require stack:
+- /home/michael/Escritorio/personalProyects/snaptrash-proyect/src/routes/report_routes.js
+- /home/michael/Escritorio/personalProyects/snaptrash-proyect/functions/index.js
+- /home/michael/Escritorio/personalProyects/snaptrash-proyect/functions/node_modules/firebase-functions/lib/runtime/loader.js
+- /home/michael/Escritorio/personalProyects/snaptrash-proyect/functions/node_modules/firebase-functions/lib/bin/firebase-functions.js {"metadata":{"emulator":{"name":"functions"},"message":"Failed to load function definition from source: FirebaseError: Failed to load function definition from source: Failed to generate manifest from function source: Error: Cannot find module 'firebase-admin'\nRequire stack:\n- /home/michael/Escritorio/personalProyects/snaptrash-proyect/src/routes/report_routes.js\n- /home/michael/Escritorio/personalProyects/snaptrash-proyect/functions/index.js\n- /home/michael/Escritorio/personalProyects/snaptrash-proyect/functions/node_modules/firebase-functions/lib/runtime/loader.js\n- /home/michael/Escritorio/personalProyects/snaptrash-proyect/functions/node_modules/firebase-functions/lib/bin/firebase-functions.js"}}
