@@ -8,10 +8,10 @@ import SignUp from './views/SignUp/SignUp'
 import Help from './views/Help/Help'
 import Profile from './views/Profile/Profile'
 import {AuthProvider} from './context/authContext'
-import ProtectecRoute from './routes/ProtectecRoute'
+import ProtectecRoute from './routes/ProtectedRoute'
 import ResetPassword from './views/Login/ResetPassword'
-import Footer from './components/Footer'
-import NavbarComponent from './components/NavbarComponent'
+import Footer from './components/Footer/Footer'
+import NavbarComponent from './components/NavBar/NavBarComp'
 
 
 function App() {
