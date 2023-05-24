@@ -65,7 +65,6 @@ function Login() {
        <div className="col bg d-none d-lg-block col-md-5 col-lg-5 col-xl-6 rounded"></div>
            <div className="col bg-white p-5 rounded-end">
 
-
                <div className="text-end">
                    <img src="../../assets/images/logo.png" width="48" alt=""/>
                </div>
